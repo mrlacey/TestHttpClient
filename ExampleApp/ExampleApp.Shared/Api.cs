@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using HttpClientForTesting;
 
 namespace ExampleApp
@@ -14,8 +10,22 @@ namespace ExampleApp
 #if DEBUG
             var client = new HttpClientForTesting.TestHttpClient(new TestHttpClientSettings
             {
-                LoadCacheFrom = "TestData\\ThreeSampleResponses.json"
-                // SaveCacheTo = "MyCacheFileName.json"
+                LoadCacheFromAppxFile = "TestData\\ThreeSampleResponses.json",
+
+                // TODO: CONFIRM-IS THIS REALLY REQUIRED????
+                LoadCacheFrom = "MyCacheFileName.json",
+                
+                // SaveCacheTo = "MyCacheFileName.json",
+
+                //IgnoreQueryStringParameters = "cacheBuster",
+                IgnoreQueryStringParameters = new[] { "cacheBuster" },
+                
+                // This can accept a string or array of strings
+                //FailRequestsContaining = ".com/something",
+                FailRequestsContaining = new[] { ".com/something", ".com/something?else=true" },
+
+                // This can be a string or array of strings too
+                FailRequestsMatchingRegex = @".id=\d{3}."
             });
 #else
             var client = new HttpClient();

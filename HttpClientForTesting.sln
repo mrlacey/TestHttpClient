@@ -13,10 +13,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleApp.Windows", "Examp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleApp.WindowsPhone", "ExampleApp\ExampleApp.WindowsPhone\ExampleApp.WindowsPhone.csproj", "{05A07FD9-6D0D-46EB-9727-4D4B766CA7D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHttpClient.Tests", "TestHttpClient.Tests\TestHttpClient.Tests.csproj", "{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExampleTwitterApp", "ExampleTwitterApp", "{29435193-A07C-4977-B5EC-D5A098E96A9A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ExampleTwitterApp.Shared", "ExampleTwitterApp\ExampleTwitterApp.Shared\ExampleTwitterApp.Shared.shproj", "{A84A0A03-6ADE-41F5-8715-24614164D1E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleTwitterApp.Windows", "ExampleTwitterApp\ExampleTwitterApp.Windows\ExampleTwitterApp.Windows.csproj", "{A60B3783-E8FD-4856-89DC-A0F8C55C0991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleTwitterApp.WindowsPhone", "ExampleTwitterApp\ExampleTwitterApp.WindowsPhone\ExampleTwitterApp.WindowsPhone.csproj", "{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00684D85-7ABC-458D-AD8C-BC05A712F8A6}"
+	ProjectSection(SolutionItems) = preProject
+		VideoPlan.txt = VideoPlan.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		ExampleApp\ExampleApp.Shared\ExampleApp.Shared.projitems*{98fdd963-82bb-4f78-8cc6-8df88ce169cf}*SharedItemsImports = 13
+		ExampleTwitterApp\ExampleTwitterApp.Shared\ExampleTwitterApp.Shared.projitems*{a84a0a03-6ade-41f5-8715-24614164d1e7}*SharedItemsImports = 13
+		ExampleTwitterApp\ExampleTwitterApp.Shared\ExampleTwitterApp.Shared.projitems*{a60b3783-e8fd-4856-89dc-a0f8c55c0991}*SharedItemsImports = 4
 		ExampleApp\ExampleApp.Shared\ExampleApp.Shared.projitems*{937e6ac2-eaa8-4408-9a46-84acf9920f21}*SharedItemsImports = 4
+		ExampleTwitterApp\ExampleTwitterApp.Shared\ExampleTwitterApp.Shared.projitems*{3ffc0aed-e4f4-4457-a4e4-cb34061fa08f}*SharedItemsImports = 4
 		ExampleApp\ExampleApp.Shared\ExampleApp.Shared.projitems*{05a07fd9-6d0d-46eb-9727-4d4b766ca7d7}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -84,6 +102,74 @@ Global
 		{05A07FD9-6D0D-46EB-9727-4D4B766CA7D7}.Release|x86.ActiveCfg = Release|x86
 		{05A07FD9-6D0D-46EB-9727-4D4B766CA7D7}.Release|x86.Build.0 = Release|x86
 		{05A07FD9-6D0D-46EB-9727-4D4B766CA7D7}.Release|x86.Deploy.0 = Release|x86
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|ARM.Build.0 = Debug|ARM
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|ARM.Deploy.0 = Debug|ARM
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|x64.ActiveCfg = Debug|x64
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|x64.Build.0 = Debug|x64
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|x64.Deploy.0 = Debug|x64
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|x86.ActiveCfg = Debug|x86
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|x86.Build.0 = Debug|x86
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Debug|x86.Deploy.0 = Debug|x86
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|ARM.ActiveCfg = Release|ARM
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|ARM.Build.0 = Release|ARM
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|ARM.Deploy.0 = Release|ARM
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|x64.ActiveCfg = Release|x64
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|x64.Build.0 = Release|x64
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|x64.Deploy.0 = Release|x64
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|x86.ActiveCfg = Release|x86
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|x86.Build.0 = Release|x86
+		{19C00889-3BFF-4D55-9A5C-8DE39D6B756B}.Release|x86.Deploy.0 = Release|x86
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|ARM.Build.0 = Debug|ARM
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|ARM.Deploy.0 = Debug|ARM
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|x64.ActiveCfg = Debug|x64
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|x64.Build.0 = Debug|x64
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|x64.Deploy.0 = Debug|x64
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|x86.ActiveCfg = Debug|x86
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|x86.Build.0 = Debug|x86
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Debug|x86.Deploy.0 = Debug|x86
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|ARM.ActiveCfg = Release|ARM
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|ARM.Build.0 = Release|ARM
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|ARM.Deploy.0 = Release|ARM
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|x64.ActiveCfg = Release|x64
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|x64.Build.0 = Release|x64
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|x64.Deploy.0 = Release|x64
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|x86.ActiveCfg = Release|x86
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|x86.Build.0 = Release|x86
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991}.Release|x86.Deploy.0 = Release|x86
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Debug|ARM.Build.0 = Debug|ARM
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Debug|ARM.Deploy.0 = Debug|ARM
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Debug|x86.ActiveCfg = Debug|x86
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Debug|x86.Build.0 = Debug|x86
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Debug|x86.Deploy.0 = Debug|x86
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Release|ARM.ActiveCfg = Release|ARM
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Release|ARM.Build.0 = Release|ARM
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Release|ARM.Deploy.0 = Release|ARM
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Release|x64.ActiveCfg = Release|Any CPU
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Release|x86.ActiveCfg = Release|x86
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Release|x86.Build.0 = Release|x86
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,5 +178,8 @@ Global
 		{98FDD963-82BB-4F78-8CC6-8DF88CE169CF} = {82B72681-014B-446F-B039-DCBB3ABF886E}
 		{937E6AC2-EAA8-4408-9A46-84ACF9920F21} = {82B72681-014B-446F-B039-DCBB3ABF886E}
 		{05A07FD9-6D0D-46EB-9727-4D4B766CA7D7} = {82B72681-014B-446F-B039-DCBB3ABF886E}
+		{A84A0A03-6ADE-41F5-8715-24614164D1E7} = {29435193-A07C-4977-B5EC-D5A098E96A9A}
+		{A60B3783-E8FD-4856-89DC-A0F8C55C0991} = {29435193-A07C-4977-B5EC-D5A098E96A9A}
+		{3FFC0AED-E4F4-4457-A4E4-CB34061FA08F} = {29435193-A07C-4977-B5EC-D5A098E96A9A}
 	EndGlobalSection
 EndGlobal
