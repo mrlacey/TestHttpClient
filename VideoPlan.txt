@@ -1,0 +1,45 @@
+
+Intro
+=====
+- Who I am
+- What going to do
+- What TestHttpClient is and what it's good for.
+
+Use cases
+=========
+- Tester: Run tests with a set of known data | Capture data while doing exploratory testing so can easily recreate anything discovered.
+- Dev & designers: Work with a set of defined data to verify certain scenarios work and look as intended
+
+- As an alternative to:
+-- Manually capturing and hardcoding responses. (The tool essentially works as a way to make this simpler)
+-- Making a fake server to return hard coded responses. This is more effort to set up and maintain and makes it more work to configure specific responses for specific tests as you need to make changes in 2 places.
+
+Supposition
+- Code is structured so that there is a single place from where all HTTP requests are made. Not doing this means that there will be more work to do to test the code/app.
+
+Twitter Snapshot
+- basic explanation of the app: allows users to log in and see what's going on now. No viewing users or specific or historic tweets. It's just about "the moment".
+
+Log in
+======
+- capture a post request
+- prevent capture of sensitive information
+- select partial body content to save
+- show varying saved requests/responses (CodedUI) to show different scenarios
+-- failed logon message
+
+Main Page
+=========
+- Test scenario that spots something that is displayed wrong.
+? handling credentials in a request
+- Create a response in testing that includes one of each type of tweet.
+- Multiple requests to get different data back when calling refresh
+
+
+
+Doing things manually is good, but what about when automating tests?
+
+
+
+
+
